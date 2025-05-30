@@ -1,4 +1,4 @@
-import { Produto as ProdutoType } from '../../App'
+import { ProdutoType } from '../../store/slices/cartSlice'
 import * as S from './styles'
 
 type Props = {
@@ -13,7 +13,7 @@ export const paraReal = (valor: number) =>
     valor
   )
 
-const ProdutoComponent = ({
+const Produto = ({
   produto,
   aoComprar,
   favoritar,
@@ -40,4 +40,4 @@ const ProdutoComponent = ({
   )
 }
 
-export default ProdutoComponent
+export default Produto
